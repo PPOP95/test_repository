@@ -9,7 +9,7 @@ reg counter1;
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
-        counter1 <= 1;
+        counter1 <= 0;
     else
         counter1 <= counter1 + 1;
 end
